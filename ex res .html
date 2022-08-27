@@ -6,24 +6,25 @@
 			background-color: black;
 			color: white;
 			text-align: center;
-			width: 30%;
+			
+			width: auto;
 		}
 		.content {
 			background-color: gainsboro;
-			width: 60%;
+			width: auto;
 		}
 		.ads {
 			background-color: cornflowerblue;
-			width: 10%;
+			width: auto;
 		}
 		.flex { 
-			display: flex; 
+			display: block; 
 		}
-		@media (max-width : 600px) {
-			.flex { display: block; }
-			.menu { width: auto; }
+		@media (min-width : 600px) {
+			.flex { display: flex; }
+			.menu { width: 60%; }
 			.content { width: auto; }
-			.ads { width: auto; }
+			.ads { width: 10%; }
 		}
 	</style>
 </head>
